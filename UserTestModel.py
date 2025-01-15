@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler
 from LinearRegression import LinearRegression
 
 def load_and_train_model():
-    df = pd.read_csv('/Users/farisalicic/Desktop/programming/ML/phoneprice.csv')
+    df = pd.read_csv('phoneprice.csv')
     df = pd.concat([df, pd.get_dummies(df['Brand'], prefix='Brand')], axis=1)
     df.drop(columns=['Brand'], inplace=True)
 
