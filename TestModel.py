@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from LinearRegression import LinearRegression
 
-df = pd.read_csv('/Users/farisalicic/Desktop/programming/ML/phoneprice.csv')
+df = pd.read_csv('phoneprice.csv')
 
 # One-hot encoding
 df = pd.concat([df, pd.get_dummies(df['Brand'], prefix='Brand', dtype=int )], axis=1)
